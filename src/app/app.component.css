@@ -1,0 +1,57 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f9;
+  margin: 0;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.card {
+  background: white;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+button {
+  padding: 8px 12px;
+  margin-right: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-add {
+  background-color: #28a745;
+  color: white;
+}
+
+.btn-delete {
+  background-color: #dc3545;
+  color: white;
+}
+
+.btn-edit {
+  background-color: #007bff;
+  color: white;
+}
+
+input {
+  padding: 8px;
+  margin: 5px;
+  width: 200px;
+}
+.menu span {
+  cursor: pointer;
+  padding: 10px;
+}
+
+.menu .active {
+  border-bottom: 3px solid #3f6aa8;
+  font-weight: bold;
+}

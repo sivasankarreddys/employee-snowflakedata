@@ -1,0 +1,104 @@
+.page-container {
+  font-family: Arial, sans-serif;
+  background: #f5f6fa;
+  min-height: 100vh;
+}
+
+/* Header */
+.header {
+  background: linear-gradient(to right, #3f6aa8, #4e79b9);
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px 10px 0 0;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.logout {
+  cursor: pointer;
+}
+
+/* Menu */
+.menu {
+  background: #eaeef3;
+  padding: 10px 30px;
+  display: flex;
+  gap: 30px;
+  border-bottom: 2px solid #ccc;
+}
+
+.menu span {
+  cursor: pointer;
+  padding-bottom: 5px;
+}
+
+.menu .active {
+  border-bottom: 3px solid #3f6aa8;
+  font-weight: bold;
+}
+
+/* Search Section */
+.search-section {
+  padding: 30px;
+}
+
+.search-box {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.search-box input {
+  padding: 10px;
+  width: 300px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.search-box button {
+  background: #3f6aa8;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Card */
+.card {
+  background: white;
+  margin: 20px 30px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.details-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.left p {
+  margin: 10px 0;
+}
+
+/* Right Card */
+.right-card {
+  background: #f3f5f9;
+  padding: 15px;
+  border-radius: 10px;
+  width: 300px;
+}
+
+/* Error */
+.error {
+  color: red;
+  text-align: center;
+  margin-top: 20px;
+}

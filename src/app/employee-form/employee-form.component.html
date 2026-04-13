@@ -1,0 +1,84 @@
+<div class="container">
+  <div class="card">
+
+    <h2>➕ Add Employee</h2>
+  <form #empForm="ngForm" (ngSubmit)="save()">
+
+    <!-- ID -->
+   
+      <div class="form-group">
+      <label>Employee ID</label>
+      <input type="number" name="id"
+             [(ngModel)]="employee.id"
+             required #empId="ngModel">
+
+      <small class="error" *ngIf="employee.id.invalid && employee.id.touched">
+        ID is required
+      </small>
+    </div>
+
+    <!-- Name -->
+    <div class="form-group">
+      <label>Name</label>
+      <input type="text" name="name"
+             [(ngModel)]="employee.name"
+             required minlength="3"
+             #name="ngModel">
+
+      <small class="error" *ngIf="name.invalid && name.touched">
+        Name must be at least 3 characters
+      </small>
+    </div>
+
+    <!-- Department -->
+    <div class="form-group">
+      <label>Department</label>
+      <input type="text" name="department"
+             [(ngModel)]="employee.department"
+             required #dept="ngModel">
+
+      <small class="error" *ngIf="dept.invalid && dept.touched">
+        Department is required
+      </small>
+    </div>
+
+    <!-- Email -->
+    <div class="form-group">
+      <label>Email</label>
+      <input type="email" name="emailId"
+             [(ngModel)]="employee.emailId"
+             required email
+             #email="ngModel">
+
+     
+    </div>
+
+    <!-- Phone -->
+    <div class="form-group">
+      <label>Phone</label>
+      <input type="text" name="mobileNo"
+             [(ngModel)]="employee.mobileNo"
+             required pattern="^[0-9]{10}$"
+             #phone="ngModel">
+
+      
+    </div>
+  
+    <!-- Buttons -->
+    <div class="button-group">
+      <button type="submit" class="btn-save" [disabled]="empForm.invalid">
+        💾 Save
+      </button>
+
+      <button type="button" class="btn-cancel" routerLink="/">
+        Cancel
+      </button>
+    </div>
+
+  </form>
+</div>
+
+
+<div class="container">
+  <router-outlet></router-outlet>
+</div> 

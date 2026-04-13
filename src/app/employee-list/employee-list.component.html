@@ -1,0 +1,28 @@
+
+<div class="page-container">
+
+<h2>Employees</h2>
+
+<table border="1.5" width="75%" style="text-align:center;">
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Department</th>
+    <th>EmailID</th>
+    <th>mobileNo</th>
+    
+  </tr>
+
+  <tr *ngFor="let emp of employees">
+    <td>{{emp.id}}</td>
+    <td>{{emp.name}}</td>
+    <td>{{emp.department}}</td>
+    <td>{{emp.emailId}}</td>
+    <td>{{emp.mobileNo}}</td>
+    
+  </tr>
+</table>
+
+</div>
+
+
