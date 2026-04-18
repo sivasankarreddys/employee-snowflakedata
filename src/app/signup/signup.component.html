@@ -1,0 +1,17 @@
+<div class="login-wrapper">
+  <div class="login-card">
+    <h2>Register</h2>
+
+    <input [(ngModel)]="username" placeholder="Username" />
+    <input [(ngModel)]="email" placeholder="Email" />
+    <input type="password" [(ngModel)]="password" placeholder="Password" />
+    <input type="password" [(ngModel)]="confirmPassword" placeholder="Confirm Password" />
+
+    <button (click)="register()">Register</button>
+
+    <p>
+      Already have an account?
+      <a routerLink="/login">Login</a>
+    </p>
+  </div>
+</div>

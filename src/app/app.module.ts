@@ -10,13 +10,19 @@ import { FormsModule } from '@angular/forms';
 import { EmployeeSearchComponent } from './employee-search/employee-search.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LayoutComponent } from './layout/layout.component';
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     EmployeeListComponent,
     EmployeeFormComponent,
     EmployeeSearchComponent,
-    LayoutComponent
+    LayoutComponent,
+    LoginComponent,
+    SignupComponent
+   
   ],
   imports: [
     BrowserModule,

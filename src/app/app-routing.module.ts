@@ -4,19 +4,23 @@ import { EmployeeListComponent } from './employee-list/employee-list.component';
 import { EmployeeFormComponent } from './employee-form/employee-form.component';
 import { EmployeeSearchComponent } from './employee-search/employee-search.component';
 import { LayoutComponent } from './layout/layout.component';
+import { LoginComponent } from './login/login.component';
+
 
 const routes: Routes = [
- { path: '',
-    component: LayoutComponent,   // ✅ wrap all pages
+  {
+    path: '',
+    component: LayoutComponent,   // ✅ wraps everything
     children: [
-  { path: 'list', component: EmployeeListComponent },
-   { path: '', component: EmployeeSearchComponent },
-  { path: 'add', component: EmployeeFormComponent },
-  { path: 'edit/:id', component: EmployeeFormComponent } 
+      { path: '', component: LoginComponent },     // 👈 default login
+      { path: 'login', component: LoginComponent },
+      { path: 'search', component: EmployeeSearchComponent },
+      { path: 'list', component: EmployeeListComponent },
+      { path: 'add', component: EmployeeFormComponent },
+      { path: 'edit/:id', component: EmployeeFormComponent }
     ]
   }
 ];
-
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]

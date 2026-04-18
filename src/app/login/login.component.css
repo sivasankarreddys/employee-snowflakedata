@@ -1,0 +1,78 @@
+/* Full page center */
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 80px); /* adjust for header */
+  background: #f4f6f9;
+}
+
+/* Card style like your app */
+.login-card {
+  background: #ffffff;
+  padding: 30px 40px;
+  border-radius: 10px;
+  width: 350px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Title */
+.login-card h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+/* Form spacing */
+.form-group {
+  margin-bottom: 18px;
+}
+
+/* Labels */
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+/* Inputs */
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+/* Focus effect */
+.form-group input:focus {
+  border-color: #4a6fa5;
+  outline: none;
+}
+
+/* Button matches your blue theme */
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4a6fa5;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #3b5c8a;
+}
+.error {
+  margin-top: 10px;
+  color: red;
+  font-size: 14px;
+}
+
+.error a {
+  margin-left: 5px;
+  color: #4a6fa5;
+  cursor: pointer;
+}
