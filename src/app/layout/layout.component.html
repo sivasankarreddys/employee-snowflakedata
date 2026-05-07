@@ -1,15 +1,28 @@
-<div class="header">
-  <h2>Employee Management System</h2>
-  <div class="logout">👤 Logout</div>
-</div>
+<header class="app-header">
+  <div class="header-left">
+    <h1>Employee Management System</h1>
+  </div>
 
-<div class="tabs">
-  <a routerLink="/" routerLinkActive="active">🔍 Search Employee</a>
+  <div class="header-right" *ngIf="!isLoginPage()">
+    <span>👤 Welcome, {{username}}</span>
+    <span class="time">🕒 {{ currentTime }}</span>
+    <button (click)="logout()">Logout</button>
+  </div>
+</header>
+
+<!-- NAVIGATION TABS -->
+<nav class="nav-tabs" *ngIf="!isLoginPage()">
+  <a routerLink="/search" routerLinkActive="active">🔍 Search Employee</a>
   <a routerLink="/add" routerLinkActive="active">➕ Add Employee</a>
   <a routerLink="/list" routerLinkActive="active">📋 Employees</a>
-</div>
+</nav>
 
-<!-- 🔥 VERY IMPORTANT -->
-<div class="content">
+<!-- MAIN CONTENT -->
+<div class="main-content">
   <router-outlet></router-outlet>
 </div>
+
+<!-- FOOTER -->
+<footer class="app-footer">
+  © 2026 Employee Management System | All Rights Reserved
+</footer>

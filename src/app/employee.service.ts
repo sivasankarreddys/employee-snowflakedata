@@ -5,7 +5,8 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class EmployeeService {
-    private baseUrl = 'https://employee-api-4ryu.onrender.com/employee';
+   /* private baseUrl = 'https://employee-api-4ryu.onrender.com/employee'; */
+   private baseUrl='http://localhost:8080/employee';
   constructor(private http: HttpClient) {}
    getAll() {
     return this.http.get<any[]>(this.baseUrl);
